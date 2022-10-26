@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  min-height: 100%;
+}
+
+/* logo */
+.logo{
+  width: 40%;
+  margin-top: 10%;
+  animation-name: logo-rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes logo-rotate{
+  100%{transform: rotate(360deg);}
+}
+
+/* navbar8 */
+nav{
+  background-color: rgba(101, 19, 148, 0.993);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+#navbar-logo{
+  background-color: rgba(67, 15, 97, 0.993);
+  width: 110%;
+  margin-left: -5%;
+  position: relative; 
+}
+.navbar-brand{
+  transition: color 0.5s;
+}
+.navbar-brand:hover{
+  color: rgb(219, 216, 216);
+}
+.navbar-brand{
+  color: white;
+  font-size: 30px;
+  margin-left: 3%;
+}
+.navbar-item{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+.navbar-item:hover{
+  background-color: rgba(67, 15, 97, 0.993);
+  color: white;
+}
+.nav-link{
+  color: white;
+  transition: color 0.5s;
+}
+.nav-link:hover{
+  color: rgb(219, 216, 216);
+}
+.content{
+  margin-left: 25%;
+  text-align: center;
+}
+
+/* home */
+#welcome-message{
+  margin-top: 20px;
+}
+
+/*footer*/
+.footer{
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+
+/* register */
+.user-form{
+  width: 40%;
+  margin-left: 30%;
+}
+.form-label{
+  float: left;
+}
+.form-control{
+  box-shadow: 1px 1px 1px black;
+}
+.password-hint{
+  color: rgb(212, 209, 209);
+}
+.user-submit{
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid;
+  width: 28%;
+  height: 40px;
+  transition: background-color 0.5s;
+}
+.user-submit:hover{
+  background-color: rgb(107, 39, 170);
+}
+.user-cancel{
+  color: white;
+  margin-left: 5%;
+  transition: color 0.5s;
+}
+.user-cancel:hover{
+  color: rgb(197, 196, 196);
+  text-decoration: none;
+}
+
+/* profile */
+.profile-table{
+  background-color: blueviolet;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5px;  
+  margin-top: 8%;
+  box-shadow: 1px 1px rgb(37, 37, 37);
+}
+.profile-table tr{
+  height: 40px;
+}
+#dark-tr{
+  background-color: rgb(106, 40, 168);
+  height: 60px;
+}
+.profile-button{
+  border-radius: 5px;
+  color: white;
+  border: 1px solid;
+  width: 40%;
+  height: 40px;
+  transition: background-color 0.5s;
+  margin-bottom: 10px;
+}
+#profile-edit{
+  background-color: rgb(121, 173, 42);
+  border: none;
+  transition: background-color 0.5s;
+
+}
+#profile-edit:hover{
+  background-color: rgb(88, 122, 37);
+}
+#profile-delete{
+  background-color: rgb(173, 33, 33);
+  border: none;
+  transition: background-color 0.5s;
+}
+#profile-delete:hover{
+  background-color: rgb(119, 27, 27);
+}
+
+/*EditProfile*/
+.profile-form{
+  background-color: rgb(209, 209, 43);
+  border-radius: 5px;
+  margin-top: 80px;
+  height: 300px;
+  box-shadow: 1px 1px 1px black;
+  animation-name: user-intro;
+  animation-duration: 1s;
+}
+.profile-input{
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  box-shadow: 1px 1px 1px black;
+}
+.profile-input:focus{
+  outline-color: rgba(101, 19, 148, 0.993);
+}
+#edit-username{
+  display: inline-block;
+}
+#edit-submit{
+  background-color: rgb(121, 173, 42);
+  width: 30%;
+}
+#edit-submit:hover{
+  background-color: rgb(88, 122, 37);
+}
+.link-text{
+  color: white;
+  margin-left: 10px;
+}
+
+/*post*/
+.post-content{
+  border: 1px solid gray;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgb(178, 69, 241);
+  box-shadow: 2px 2px 3px rgb(84, 31, 134);
+  transition: background-color 0.5s;
+  animation-name: user-intro;
+  animation-duration: 1s;
+}
+.post-content:hover{
+  background-color: rgb(133, 50, 182);
+}
+.post-content h3{
+  color: rgb(106, 40, 168);
+  margin-left: -60%;
+}
+.post-content small{
+  margin-left: -60%;
+}
+.post-image{
+  width: 60%;
+  height: 250px;
+}
+.post-content p{
+  font-size: 25px;
+  margin-top: 20px;
+}
+.like-btn{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  margin-bottom: 10px;
+  position: relative;
+  left: 40%;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.like-btn:hover{
+  background-color: rgba(192, 186, 186, 0.384);
+}
+.like-img{
+  width: 25px;
+  height: 25px;
+}
+.comment-btn{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  margin-bottom: 10px;
+  position: relative;
+  left: 40%;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.comment-btn:hover{
+  background-color: rgba(192, 186, 186, 0.384);
+}
+.comment-img{
+  width: 25px;
+  height: 25px;
+}
+.comment-form{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.comment-form button{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.comment-form button:hover{
+  background-color: rgba(192, 186, 186, 0.384);
+}
+.comment-form textarea{
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgb(85, 83, 83);
+}
+.comment-content{
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgb(231, 147, 206);
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(67, 15, 97, 0.993);
+  margin-bottom: 10px;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.comment-content:hover{
+  background-color: rgb(194, 122, 172);
+  transform: translateY(-3px);
+}
+.comment-content img{
+  margin-bottom: 10px;
+}
+
+/* users */
+.user-table{
+  background-color: rgb(133, 50, 182);
+  animation-name: user-intro;
+  animation-duration: 1s;
+}
+@keyframes user-intro {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.user-table th{
+  padding: 20px;
+  background-color: rgb(106, 40, 168);
+  width: 70%;
+}
+.user-table td{
+  padding: 20px;
+  text-decoration: none;
+  width: 70%;
+}
+.profile-link{
+  text-decoration: none;
+}
+.user-tr:hover{
+  background-color: rgb(112, 44, 151);
+}
+.profileBtn{
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(121, 173, 42);
+  color: white;
+  transition: background-color 0.5s;
+}
+.profileBtn:hover{
+  background-color: rgb(88, 122, 37);
+  color: white;
+  text-decoration: none;
+}
+.pagination{
+  width: 20%;
+}
+
+/* user-profile */
+.follow-btn{
+  background-color: transparent;
+  border: 0.5px solid rgb(216, 210, 210);
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 3px rgb(43, 42, 42);
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+.follow-btn:hover{
+  background-color: rgb(216, 210, 210);
+  color: rgb(80, 78, 78);
+  border-color: rgb(80, 78, 78);
+}
+.unfollow-btn{
+  background-color: rgb(55, 173, 44);
+  border: 0.5px solid rgb(216, 210, 210);
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 3px rgb(43, 42, 42);
+  transition: background-color 0.5s, color 0.5s;
+}
+.unfollow-btn:hover{
+  background-color: transparent;
+}
+.profile-follow-table{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgb(250, 173, 215);
+}
+.profile-follow-table th{
+  background-color: rgb(231, 147, 206);
+}
+.follow-tr{
+  background-color: rgb(250, 173, 215);
+}
+.follow-tr:hover{
+  background-color: rgb(221, 146, 187);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
